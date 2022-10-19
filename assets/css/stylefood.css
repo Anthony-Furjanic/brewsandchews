@@ -6,6 +6,7 @@
   --mainclr: #8e8268;
   --accent2: #844e36;
   --text: #474853;
+  --text2: #ffffff;
 }
 
 /*Global Settings */
@@ -13,7 +14,7 @@
 * {
   box-sizing: border-box;
   padding: 20px;
-  margin: 0px;
+  margin: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -29,32 +30,23 @@
 }
 
 h1 {
-  font-size: 40px;
-  color: var(--text);
+  font-size: xx-large;
+  color: var(--text2);
   align-items: flex-end;
   justify-content: flex-end;
   padding: 0 20px 10px 20px;
 }
 
 h2 {
-  font-size: 20px;
-  color: var(--text);
+  font-size: x-large;
+  color: var(--text2);
   align-items: flex-end;
   justify-content: flex-end;
   padding: 0 20px 0 20px;
 }
 
 h3 {
-  font-size: 18px;
-  color: var(--text);
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 0 20px 10px 0;
-  font-weight: bolder;
-}
-
-h4 {
-  font-size: 30px;
+  font-size: larger;
   color: var(--text);
   align-items: flex-end;
   justify-content: flex-end;
@@ -80,6 +72,11 @@ a {
   text-decoration: none;
 }
 
+.header-picture {
+  background-image: url("/assets/images/beertaps.png");
+  color: var(--text2);
+}
+
 /*specific to the food box*/
 
 #searchButton {
@@ -96,6 +93,16 @@ a {
   margin: 0 0 20px 0;
 } 
 
+#foodLabel {
+  color: (--text2);
+  font-size:large;
+}
+
+#foodTitle {
+  color: (--text2);
+  font-size:large;
+}
+
 #foodSearch {
   color: var(--text);
   font-weight: bolder;
@@ -103,8 +110,10 @@ a {
 }
 
 .recipeBox1 {
+  width: 50%
   background-color: var(--background);
   box-shadow: 2px 2px 2px 2px var(--accent2);
+  flex-direction: row;
 }
 
 .recipeBox1 label {
@@ -121,3 +130,5 @@ a {
   margin: 20px;
   padding: 50px;
 }
+
+
