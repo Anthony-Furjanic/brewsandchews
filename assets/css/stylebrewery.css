@@ -1,16 +1,21 @@
+.min-100-vh {
+    background-color: #aaa0a0;
+}
+
 .get-breweries{
     display: flex;
     margin: 10px;
-  flex-direction: column;
+    flex-direction: column;
     padding: 50 px;
-    width: 80%;
-    border: 1px solid salmon;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px  #844e36;
+    background-color 
   
   }
   
   
   button{
-    background-color: #4CAF50; /* Green */
+    background-color: #86b3d1; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
