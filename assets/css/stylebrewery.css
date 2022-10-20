@@ -1,21 +1,23 @@
+
+
 .min-100-vh {
     background-color: #aaa0a0;
+    
 }
 
-.get-breweries{
+.get-breweries {
     display: flex;
     margin: 10px;
     flex-direction: column;
     padding: 50 px;
     width: 100%;
     box-shadow: 2px 2px 2px 2px  #844e36;
-    background-color 
   
   }
   
   
-  button{
-    background-color: #86b3d1; /* Green */
+  button {
+    background-color: #86b3d1; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -24,3 +26,5 @@
     display: inline-block;
     font-size: 16px;
   }
+
+  
