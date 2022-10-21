@@ -30,31 +30,44 @@
     </header>
     <main>
         <div class="box px-1"> </div>
-        <div class="columns is-variable is-2-mobile is-0-tablet is-3-desktop is-8-widescreen is-1-fullhd is-vcentered px-6">
-            <div class="column">
-                <p class="bd-notification is-info">
-            <section class="min-100-vh flex-column">
-                <div id="breweries"></div>
-                <div class="get-breweries"> 
-                <div>
-            <input id="citySearch"></input>
-            </div>
-                    <button id="fetch-button">get breweries</button>
-                    <section id="breweries-results"> 
-                        <ul> 
-                            <li>
-                                <h1>Name of Brewery</h1>
-                                <h2>Location</h2>
-                            </li>
-                        </ul>
-            <div class="brewInfo col-6"></div> <!--created a div to link in the JS-->
-                    </section>
+            <section class="columns">
+                <div class="get-breweries column is-half"> 
+                    <div class="field">
+                        <label class="label">Type City Name to Find Local Brewery</label>
+                        <div class="control">
+                          <input class="input" id="citySearch" type="text" placeholder="Philadelphia" style="width: 20vw">
+                          <button class="button" id="fetch-button">Search</button>
+                        </div>
+                        <section class="columns" >
+                            <div class="brewInfo column is-half"></div> <!--created a div to link in the JS-->
+                        </section>                     
+                      </div>
+                    </div>
+                <div class="column is-half recipeBox1">
+                    <div class="field">
+                        <label class="label">Enter favorite food type here:</label>
+                        <div class="control">
+                          <input class="input" id="foodSearch" type="text" placeholder="Beef" style="width: 20vw">
+                          <button class="button" id="searchButton">Get Recipe</button>
+                        </div>
+                      
+                      </div>
+                            <button class="button" id="nextButton">Next</button>
+                            <div id="foodPic"></div>
+                            <div id="instructions"></div>
                 </div>
             </section>
-                </p>
-            <div class="columns is-mobile">
 
-                     <div class="column">
+
+                    <!-- <div>
+                        <button id="reset">Search New City</button>
+                    </div> -->
+                <!-- </div> -->
+            </section>
+                <!-- </p>
+                <div class="columns is-mobile"> -->
+
+                    <!-- <div class="column">
                         <p class="bd-notification is-info">
             <body class="bodyStyle clearfix"> 
                                 <section class="min-100-vh flex-column">
@@ -72,7 +85,7 @@
                                     </div>
                                 </section>
                         </p>
-                    </div>
+                    </div> -->
 
                     <div class="column">
                         <p class="bd-notification is-info">
@@ -80,28 +93,6 @@
                             </button>  
                         </p>
                     </div>
-
-                    <div class="column">
-                        <p class="bd-notification is-info">Third nested column</p>
-                    </div>
-
-                </div>
-                <div class="columns is-variable is-2-mobile is-0-tablet is-3-desktop is-8-widescreen is-1-fullhd is-vcentered px-6">
-                    <div class="column">
-                    <p class="bd-notification is-info">
-                        <section class="recipeBox1">
-                            <label id="foodLabel"><h2>Enter favorite food type here.</h2></label>
-                            <input id="foodSearch" value="Beef">
-                            <button id="searchButton">Click Here</button>
-                            <button id="nextButton">Next</button>
-                            <h1>My favorite food is: <span id="foodTitle"></span></h1>
-                            <div id="foodPic"></div>
-                            <div id="instructions"></div>
-                        </section>
-                    </p>
-                </div>
-            </div>
-        </div>
     </main> 
 </body>
 </html>
