@@ -93,7 +93,7 @@ function searchFood() {
       //pull in the title and picture of the dish
       document.getElementById("foodTitle").innerText = results.results[currentItem].title;
       document.getElementById("foodPic").innerHTML = "<img src='" + results.results[currentItem].image + "'>";
-
+      console.log('text');
     });
   });
 };

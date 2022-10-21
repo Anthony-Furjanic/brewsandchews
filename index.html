@@ -1,104 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://github.com/jgthms/bulma/blob/master/css/bulma.css">
-    <!--<link rel="stylesheet" href="./assets/css/styleflex.css" />
-    <link rel="stylesheet" href="./assets/css/stylebrewery.css" />-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://github.com/jgthms/bulma/blob/master/css/bulma.css"
+    />
+    <!--<link rel="stylesheet" href="./assets/css/styleflex.css" />-->
+    <link rel="stylesheet" href="./assets/css/stylebrewery.css" />
     <link rel="stylesheet" href="./assets/css/styleall.css" />
     <script src="./assets/js/scriptfood.js" defer></script>
     <script src="./assets/js/scriptbrewery.js" defer></script>
     <script src="./assets/js/Triviacode.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
-    
-    <title>Brews N Chews</title>
-</head>
 
-<body class="bodyStyle clearfix">
-    <header >
-        <div class="tabs is-right is-boxed">
-            <h1>Brews N Chews</h1>
-            <ul>
-              <li class="is-active"><a>Brews</a></li>
-              <li><a>Chews</a></li>
-            </ul>
-        </div>
+    <title>Brews N Chews</title>
+  </head>
+
+  <body class="bodyStyle clearfix">
+    <header>
+      <div class="tabs is-right is-boxed">
+        <h1>Brews N Chews</h1>
+        <ul>
+          <li class="is-active"><a>Brews</a></li>
+          <li><a>Chews</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-        <div class="box px-1"> </div>
+      <div class="box px-1"></div>
+      <section class="columns">
+        <div class="get-breweries column is-half">
+          <div class="field">
+            <label class="label">Type City Name to Find Local Brewery</label>
+            <div class="control">
+              <input
+                class="input"
+                id="citySearch"
+                type="text"
+                placeholder="Philadelphia"
+                style="width: 20vw"
+              />
+              <button class="button" id="fetch-button">Search</button>
+            </div>
             <section class="columns">
-                <div class="get-breweries column is-half"> 
-                    <div class="field">
-                        <label class="label">Type City Name to Find Local Brewery</label>
-                        <div class="control">
-                          <input class="input" id="citySearch" type="text" placeholder="Philadelphia" style="width: 20vw">
-                          <button class="button" id="fetch-button">Search</button>
-                        </div>
-                        <section class="columns" >
-                            <div class="brewInfo column is-half"></div> <!--created a div to link in the JS-->
-                        </section>                     
-                      </div>
-                    </div>
-                <div class="column is-half recipeBox1">
-                    <div class="field">
-                        <label class="label">Enter favorite food type here:</label>
-                        <div class="control">
-                          <input class="input" id="foodSearch" type="text" placeholder="Beef" style="width: 20vw">
-                          <button class="button" id="searchButton">Get Recipe</button>
-                        </div>
-                      
-                      </div>
-                            <button class="button" id="nextButton">Next</button>
-                            <div id="foodPic"></div>
-                            <div id="instructions"></div>
-                </div>
+              <div class="brewInfo column is-half"></div>
+              <!--created a div to link in the JS-->
             </section>
-
-
-                    <!-- <div>
-                        <button id="reset">Search New City</button>
-                    </div> -->
-                <!-- </div> -->
-            </section>
-                <!-- </p>
-                <div class="columns is-mobile"> -->
-
-                    <!-- <div class="column">
-                        <p class="bd-notification is-info">
-            <body class="bodyStyle clearfix"> 
-                                <section class="min-100-vh flex-column">
-                                    <div id="breweries"></div>
-                                    <div class="get-breweries"> 
-            <button id="fetch-button">get breweries</button>
-                                        <section id="breweries-results"> 
-                                            <ul> 
-                                                <li>
-                                                    <h1>Name of Brewery</h1>
-                                                    <h2>Location</h2>
-                                                </li>
-                                            </ul>
-                                        </section>
-                                    </div>
-                                </section>
-                        </p>
-                    </div> -->
-
-                    <div class="column">
-                        <p class="bd-notification is-info">
-                            <button id="Triviabutton" >
-                            </button>  
-                        </p>
-                    </div>
-    </main> 
-</body>
+          </div>
+        </div>
+        <div class="column is-half recipeBox1">
+          <div class="field">
+            <label class="label">Enter favorite food type here:</label>
+            <div class="control">
+              <input
+                class="input"
+                id="foodSearch"
+                type="text"
+                placeholder="Beef"
+                style="width: 20vw">
+           
+              <button class="button" id="searchButton">Get Recipe</button>
+              <button class="button" id="nextButton">Next</button>
+            </div>
+            </div>
+                    <div id="foodTitle"></div>
+                    <div id="foodPic"></div>
+                    <div id="instructions"></div>
+        </div>
+      </section>
+      <section>
+        <div class="column">
+            <p class="bd-notification is-info">
+            <button id="Triviabutton"></button>
+            </p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
-
-
-
-
-
-

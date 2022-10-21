@@ -1,3 +1,12 @@
+:root {
+  --background: #86b3d1;
+  --accent1: #aaa0a0;
+  --accent2: #844e36;
+  --accent3: #8e8268;
+  --accent4: #474853;
+  --text: #ffffff;
+}
+
 /*specific to the food box*/
 
 #searchButton {
