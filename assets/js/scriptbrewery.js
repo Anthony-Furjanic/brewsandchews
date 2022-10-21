@@ -1,6 +1,6 @@
 var fetchButton = document.getElementById('fetch-button');
 fetchButton.addEventListener('click', getApi);
-var citySearch = document.getElementById('citySearch');
+let citySearch = document.getElementById('citySearch');
 
 
 function getApi() {
@@ -65,7 +65,7 @@ function displayBeerInfo(data) {
   website.setAttribute("src", data.website_url);
   website.textContent = "Link"
 
-  var phone = document.createElement("div");
+  let phone = document.createElement("div");
   phone.setAttribute("class", "card-content");
 
 
@@ -74,7 +74,7 @@ function displayBeerInfo(data) {
 
 
 
-  var span = document.createElement("span")
+  let span = document.createElement("span")
 
 
   //Injection of data

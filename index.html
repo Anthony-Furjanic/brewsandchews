@@ -18,7 +18,7 @@
     <title>Brews N Chews</title>
 </head>
 
-<body>
+<body class="bodyStyle clearfix">
     <header >
         <div class="tabs is-right is-boxed">
             <h1>Brews N Chews</h1>
@@ -30,12 +30,7 @@
     </header>
     <main>
         <div class="box px-1"> </div>
-        <!-- <div class="columns is-variable is-2-mobile is-0-tablet is-3-desktop is-8-widescreen is-1-fullhd is-vcentered px-6">
-            <div class="column">
-                <p class="bd-notification is-info"> -->
-                     <!-- <body class="bodyStyle clearfix"> -->
             <section class="columns">
-                <!-- <div id="breweries"></div> -->
                 <div class="get-breweries column is-half"> 
                     <div class="field">
                         <label class="label">Type City Name to Find Local Brewery</label>
@@ -43,43 +38,27 @@
                           <input class="input" id="citySearch" type="text" placeholder="Philadelphia" style="width: 20vw">
                           <button class="button" id="fetch-button">Search</button>
                         </div>
-                     
+                        <section class="columns" >
+                            <div class="brewInfo column is-half"></div> <!--created a div to link in the JS-->
+                        </section>                     
                       </div>
-                    <!-- <label id="beerLabel">Type city name to find local breweries.</label>
-                        <input class = "input is-normal" id="citySearch" placeholder="Philadelphia" style="width: 15vw;">
-                  
-                    <button class = "button" id="fetch-button">Search</button> -->
                     </div>
                 <div class="column is-half recipeBox1">
                     <div class="field">
-                        <label class="label">Enter favorite food type here</label>
+                        <label class="label">Enter favorite food type here:</label>
                         <div class="control">
                           <input class="input" id="foodSearch" type="text" placeholder="Beef" style="width: 20vw">
                           <button class="button" id="searchButton">Get Recipe</button>
                         </div>
                       
                       </div>
-                    <!-- <label id="foodLabel"><h2>Enter favorite food type here.</h2></label>
-                            <input class="input" id="foodSearch" placeholder="Beef">
-                            <button class="button" id="searchButton">Get Recipe</button> -->
                             <button class="button" id="nextButton">Next</button>
-                            <!-- <h1>My favorite food is: <span id="foodTitle"></span></h1> -->
                             <div id="foodPic"></div>
                             <div id="instructions"></div>
                 </div>
             </section>
-                    <!-- <section id="breweries-results"> 
-                        <ul> 
-                            <li>
-                                <h1></h1>
-                                <h2></h2>
-                            </li>
-                        </ul>
-                        
-                    </section> -->
-                    <section class="columns" >
-                        <div class="brewInfo column is-half"></div> <!--created a div to link in the JS-->
-                    </section>
+
+
                     <!-- <div>
                         <button id="reset">Search New City</button>
                     </div> -->
@@ -90,11 +69,11 @@
 
                     <!-- <div class="column">
                         <p class="bd-notification is-info">
-                            <body class="bodyStyle clearfix">
+            <body class="bodyStyle clearfix"> 
                                 <section class="min-100-vh flex-column">
                                     <div id="breweries"></div>
                                     <div class="get-breweries"> 
-                                        <button id="fetch-button">get breweries</button>
+            <button id="fetch-button">get breweries</button>
                                         <section id="breweries-results"> 
                                             <ul> 
                                                 <li>
@@ -111,26 +90,9 @@
                     <div class="column">
                         <p class="bd-notification is-info">
                             <button id="Triviabutton" >
-                                Trivia Question
                             </button>  
                         </p>
                     </div>
-
-                    <!-- <div class="column">
-                        <p class="bd-notification is-info">Third nested column</p>
-                    </div> -->
-
-                <!-- </div> -->
-                <!-- <div class="columns is-variable is-2-mobile is-0-tablet is-3-desktop is-8-widescreen is-1-fullhd is-vcentered px-6">
-                    <div class="column">
-                    <p class="bd-notification is-info">
-                        <section class="recipeBox1">
-                            
-                        </section>
-                    </p>
-                </div>
-            </div>
-        </div> -->
     </main> 
 </body>
 </html>
