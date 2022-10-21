@@ -13,7 +13,7 @@ fetch(`https://api.openbrewerydb.org/breweries?by_city=${citySearch.value}&per_p
 
       var barName = data[i].name 
       console.log(barName)
-      displayBeerInfo(data.current); // AL Update- Recently added this to the for-loop, since I created a function for it below.
+      displayBeerInfo(data[i]); // AL Update- Recently added this to the for-loop, since I created a function for it below.
 
 // create
 var $li = $("<li>");
@@ -49,36 +49,47 @@ function displayBeerInfo(data){
   var card = document.createElement("div");
   card.setAttribute("class","card");
 
-  var cardBody = document.createElement("div");
-  cardBody.setAttribute("class", "card-body");
+  var cardContent = document.createElement("div"); //changed this from cardBody to cardContent based on Bulma
+  cardContent.setAttribute("class", "card-content"); 
 
-  var cardTitle = document.createElement("h5");
-  cardTitle.textContent = citySearch;
-  cardTitle.setAttribute("class","card-title");
+  var cardHeader = document.createElement("header");
+  cardHeader.textContent = citySearch;
+  cardHeader.setAttribute("class","card-header-title");
+  //changed this from cardTitle to cardHeader
 
-  var name =document.createElement("p");
-  name.setAttribute("class", "card-text");
+  var name =document.createElement("div");
+  name.setAttribute("class", "card-content");
+  //changed from "p" to "div" & "card-text" to "card-content"
 
-  var phone = document.createElement("p");
-  phone.setAttribute("class", "card-text");
+  var phone = document.createElement("div");
+  phone.setAttribute("class", "card-content");
+  //changed from "p" to "div" & "card-text" to "card-content"
 
-  var address = document.createElement("p");
-  address.setAttribute("class","card-text")
+  var address = document.createElement("div");
+  address.setAttribute("class","card-content")
+  //changed from "p" to "div" & "card-text" to "card-content"
+
 
   var span = document.createElement("span")
 
-  //Injection of data
-  // name.textContent = 'Name of brewery:' ;{data.name} ; 
-  // phone.textContent = "Phone Number:" ;{data.phone};
-  // address.textContent = "Address:" ;{data.address};
+  //make sure that card-body, card-title, and card-text, are in bulma <-- have one example of bulma on one side, 
+  //double check the append order (lines 80-83) <--make sure the order is correct.
 
-  //ERROR - ^I think I know what might be wrong. When I try to make a '$' in front of the {data.fillinblank}, it creates an error. It worked in my homework, not sure why it's not working here.
+  //Injection of data
+  name.textContent = "Name of brewery: " + data.name ; 
+  phone.textContent = "Phone Number: " + data.phone;
+  address.textContent = "Address: " + data.address;
+
 
   //Append
-  cardTitle.append(span)
-  cardBody.append(cardTitle,name,phone,address)
-  card.append(cardBody)
   brewInfo.append.card
+  card.append(cardContent)
+  cardHeader.append(span) 
+    //changed from cardTitle to cardHeader
+  cardContent.append(cardHeader,name,phone,address)
+    //changed from cardText to cardContent
+  
+ 
   
 
 }
