@@ -1,76 +1,11 @@
-// var requestUrl = 'https://api.github.com/orgs/nodejs/repos';
-// var badRequestUrl = 'https://api.github.com/orgs/nodejddd/repad';
-
-// fetch(requestUrl)
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (data) {
-//     console.log(data);
-//   });
-
-// fetch(badRequestUrl)
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (data) {
-//     console.log(data);
-//   });
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'f18ada2c48msh78033a43062fe9fp17cd5cjsnd0092509d56d',
-// 		'X-RapidAPI-Host': 'brianiswu-open-brewery-db-v1.p.rapidapi.com'
-// 	}
-// };
-
-// fetch('https://brianiswu-open-brewery-db-v1.p.rapidapi.com/breweries/5494', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-
-
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'f18ada2c48msh78033a43062fe9fp17cd5cjsnd0092509d56d',
-// 		'X-RapidAPI-Host': 'brianiswu-open-brewery-db-v1.p.rapidapi.com'
-// 	}
-// };
-
-// fetch('https://brianiswu-open-brewery-db-v1.p.rapidapi.com/breweries/search?query=dog', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-
-// var fetchButton = document.getElementById('fetch-button');
-
-// // Get Breweries 
-
-// function getApi() {
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'f18ada2c48msh78033a43062fe9fp17cd5cjsnd0092509d56d',
-// 		'X-RapidAPI-Host': 'brianiswu-open-brewery-db-v1.p.rapidapi.com'
-// 	}
-// };
-
-// fetch('https://brianiswu-open-brewery-db-v1.p.rapidapi.com/breweries?by_state=NY&by_name=cooper&by_type=micro&by_tag=patio', options)
-// 	.then(response => response.json())
-// 	.then(response => {
-//     console.log(response);
-//     console.log(response.content);
-//   })
-// 	.catch(err => console.error(err));
-// }
 
 var fetchButton = document.getElementById('fetch-button');
 fetchButton.addEventListener('click', getApi);
+var citySearch = document.getElementById('citySearch');
 
 
 function getApi(){
-fetch("https://api.openbrewerydb.org/breweries?by_city=san_diego&per_page=3")
+fetch(`https://api.openbrewerydb.org/breweries?by_city=${citySearch.value}&per_page=3`)
 	.then(response => response.json())
   .then(function(data){
     console.log(data)
@@ -78,25 +13,83 @@ fetch("https://api.openbrewerydb.org/breweries?by_city=san_diego&per_page=3")
 
       var barName = data[i].name 
       console.log(barName)
+      displayBeerInfo(data[i]); // AL Update- Recently added this to the for-loop, since I created a function for it below.
 
-      // create
+// create
 var $li = $("<li>");
 var $h1 = $("<h1>");
 var $h2 = $("<h2>");
+var $h3 = $("<h3>");
 
-
-      // modify
+// modify
 $h1.text(barName);
-// to do location!
+$h2.text(data[i].phone);
+$h3.text(data[i].street+" "+data[i].state+" "+data[i].postal_code);
 
-
-
-      // append
+// append
 $("#breweries-results ul").append($li)
-$li.append($h1, $h2)
+$li.append($h1, $h2, $h3)
 
     }
   })
 
 	.catch(err => console.error(err));
+}
+
+//AL UPDATE-
+
+var brewInfo=document.querySelector(".brewInfo")
+
+//Creating a function 
+//-- To display the data as Name: , Location : , etc.
+function displayBeerInfo(data){
+  console.log(data,"from display function");
+
+  //Creation of elements
+  var card = document.createElement("div");
+  card.setAttribute("class","card");
+
+  var cardContent = document.createElement("div"); //changed this from cardBody to cardContent based on Bulma
+  cardContent.setAttribute("class", "card-content"); 
+
+  var cardHeader = document.createElement("header");
+  cardHeader.textContent = citySearch;
+  cardHeader.setAttribute("class","card-header-title");
+  //changed this from cardTitle to cardHeader
+
+  var name =document.createElement("div");
+  name.setAttribute("class", "card-content");
+  //changed from "p" to "div" & "card-text" to "card-content"
+
+  var phone = document.createElement("div");
+  phone.setAttribute("class", "card-content");
+  //changed from "p" to "div" & "card-text" to "card-content"
+
+  var address = document.createElement("div");
+  address.setAttribute("class","card-content")
+  //changed from "p" to "div" & "card-text" to "card-content"
+
+
+  var span = document.createElement("span")
+
+  //make sure that card-body, card-title, and card-text, are in bulma <-- have one example of bulma on one side, 
+  //double check the append order (lines 80-83) <--make sure the order is correct.
+
+  //Injection of data
+  name.textContent = "Name of brewery: " + data.name ; 
+  phone.textContent = "Phone Number: " + data.phone;
+  address.textContent = "Address: " + data.address;
+
+
+  //Append
+  brewInfo.append.card
+  card.append(cardContent)
+  cardHeader.append(span) 
+    //changed from cardTitle to cardHeader
+  cardContent.append(cardHeader,name,phone,address)
+    //changed from cardText to cardContent
+  
+ 
+  
+
 }
