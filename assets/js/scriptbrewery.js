@@ -69,13 +69,6 @@ var fetchButton = document.getElementById('fetch-button');
 fetchButton.addEventListener('click', getApi);
 
 
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'f18ada2c48msh78033a43062fe9fp17cd5cjsnd0092509d56d',
-// 		'X-RapidAPI-Host': 'brianiswu-open-brewery-db-v1.p.rapidapi.com'
-// 	}
-// };
 function getApi(){
 fetch("https://api.openbrewerydb.org/breweries?by_city=san_diego&per_page=3")
 	.then(response => response.json())
