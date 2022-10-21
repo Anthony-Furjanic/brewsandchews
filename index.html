@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
     <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/stylebrewery.css" />
-    <link rel="stylesheet" href="./assets/css/stylefood.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://github.com/jgthms/bulma/blob/master/css/bulma.css">
+    <!--<link rel="stylesheet" href="./assets/css/styleflex.css" />
+    <link rel="stylesheet" href="./assets/css/stylebrewery.css" />-->
+    <link rel="stylesheet" href="./assets/css/styleall.css" />
     <script src="./assets/js/scriptfood.js" defer></script>
     <script src="./assets/js/scriptbrewery.js" defer></script>
+    <script src="./assets/js/Triviacode.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
     
     <title>Brews N Chews</title>
 </head>
-    <header >
-        <nav>
-            <ul>
-                <li><a href="#home">About Me</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-            </ul>
-        </nav>
 
-    </header>
-        <section class="header-picture">
+<body>
+    <header >
+        <div class="tabs is-right is-boxed">
             <h1>Brews N Chews</h1>
-        </section>
-        <body class="bodyStyle clearfix">
+            <ul>
+              <li class="is-active"><a>Brews</a></li>
+              <li><a>Chews</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="box px-1"> </div>
+        <div class="columns is-variable is-2-mobile is-0-tablet is-3-desktop is-8-widescreen is-1-fullhd is-vcentered px-6">
+            <div class="column">
+                <p class="bd-notification is-info">
+                     <body class="bodyStyle clearfix">
             <section class="min-100-vh flex-column">
                 <div id="breweries"></div>
                 <div class="get-breweries"> 
@@ -44,14 +48,60 @@
                     </section>
                 </div>
             </section>
-            <section class="recipeBox1">
-                <label id="foodLabel"><h2>Enter favorite food type here.</h2></label>
-                <input id="foodSearch" value="Beef">
-                <button id="searchButton">Click Here</button>
-                <button id="nextButton">Next</button>
-                <h1>My favorite food is: <span id="foodTitle"></span></h1>
-                <div id="foodPic"></div>
-                <div id="instructions"></div>
-            </section>
+                </p>
+                <div class="columns is-mobile">
+
+                    <div class="column">
+                        <p class="bd-notification is-info">
+                            <body class="bodyStyle clearfix">
+                                <section class="min-100-vh flex-column">
+                                    <div id="breweries"></div>
+                                    <div class="get-breweries"> 
+                                        <button id="fetch-button">get breweries</button>
+                                        <section id="breweries-results"> 
+                                            <ul> 
+                                                <li>
+                                                    <h1>Name of Brewery</h1>
+                                                    <h2>Location</h2>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </section>
+                        </p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bd-notification is-info">Second nested column</p>
+                    </div>
+
+                    <div class="column">
+                        <p class="bd-notification is-info">Third nested column</p>
+                    </div>
+
+                </div>
+                <div class="columns is-variable is-2-mobile is-0-tablet is-3-desktop is-8-widescreen is-1-fullhd is-vcentered px-6">
+                    <div class="column">
+                    <p class="bd-notification is-info">
+                        <section class="recipeBox1">
+                            <label id="foodLabel"><h2>Enter favorite food type here.</h2></label>
+                            <input id="foodSearch" value="Beef">
+                            <button id="searchButton">Click Here</button>
+                            <button id="nextButton">Next</button>
+                            <h1>My favorite food is: <span id="foodTitle"></span></h1>
+                            <div id="foodPic"></div>
+                            <div id="instructions"></div>
+                        </section>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main> 
 </body>
 </html>
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+/*colors*/
+
+:root {
+    --background: #86b3d1;
+    --accent1: #aaa0a0;
+    --accent2: #844e36;
+    --accent3: #8e8268;
+    --accent4: #474853;
+    --text: #ffffff;
+  }
+    
+    
+    /* GLOBAL HTML ELEMENTS */
+    
+    * {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    body {
+        background-color: var(--background);
+    }
+    
+    a {
+        color: var(--text);
+        text-decoration: none;
+        background-color: var(--accent1);
+    
+    }
+    
+    a:visited {
+        color: var(--accent2);
+    }
+    
+    p {
+        font-size: 16px;
+        color: var(--text);
+        padding: 5px 0;
+    }
+    
+    /*END GLOBAL ELEMENTS */
+    
+    /*THIS IS THE HEADER SECTION W/NAV BAR*/
+    
+    header {
+        padding: 20px;
+        background-color: var(--accent4);
+        color: var(--text);
+        /*text-shadow: 2px 2px #333333;*/
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    @media screen and (max-width: 840px) {
+        .shrink-wrap {
+            flex-direction: column;
+        }
+    }
+    
+    nav {
+        align-items: center;
+    }
+    
+    nav ul {
+        display: flex;
+        padding-right: 20px;
+    }
+    
+    @media screen and (max-width: 840px) {
+        nav ul {
+            flex-direction: column;
+        }
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+        padding: 10px;
+        font-size: 20px;
+        list-style-type: none;
+        background-color: var(--accent1);
+        color: var(--accent4);
+        /*text-shadow: 0px 0px #333333;*/
+    }
+    
+    nav ul li a {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    /*END OF HEADER SECTION*/
+    
+    
+    /*TOP IMAGE */
+     
+    .box {
+        background-image: url("../images/beertaps.png");
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 10px;
+        color: var(--text);
+        text-shadow: 2px 2px #333333;
+    
+    }
+    
+    /*END OF TOP IMAGE*/
+    
+    
+    /* START OF MAIN - WHERE I PRESENT MYSELF & WORK */
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+    }
+    
+    
+    
+    aside {
+        flex: 1;
+        border-right: solid var(--text) 5px;
+        margin-right: 20px;
+    }
+    
+    aside h2 {
+        text-align: right;
+        padding-right: 10px;
+    }
+    
+    /* END OF LEFT SIDE PAGE HEADERS */
+    
+    /*PROJECT PICTURES AND LINKS - Right Content section*/
+    
+    .text {
+        margin-left: 5px;
+    }
+    
+    .container div {
+        flex: 6;
+    }
+    
+    .box-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imagelink {
+        display: inline-flex;
+        flex-direction: row;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+    
+    .imagelinks {
+        display: grid;
+        flex: 1;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    
+    .description {
+        display: flex;
+        align-items:flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    
+    .description h3 {
+        margin: 0 5px 5px 0;
+        color: var(--text);
+        /*text-shadow: 2px 2px #333333;*/
+    } 
+    
+    .description p {
+        margin: 0 5px 5px 0;
+        color: var(--text);
+        /*text-shadow: 2px 2px #333333;*/
+    } 
+        
+
+    
