@@ -49,46 +49,45 @@ function displayBeerInfo(data){
   var card = document.createElement("div");
   card.setAttribute("class","card");
 
-  var cardContent = document.createElement("div"); //changed this from cardBody to cardContent based on Bulma
+  var cardContent = document.createElement("div"); 
   cardContent.setAttribute("class", "card-content"); 
 
   var cardHeader = document.createElement("header");
-  cardHeader.textContent = citySearch;
+  cardHeader.textContent = citySearch.value;
   cardHeader.setAttribute("class","card-header-title");
-  //changed this from cardTitle to cardHeader
+ 
 
   var name =document.createElement("div");
   name.setAttribute("class", "card-content");
-  //changed from "p" to "div" & "card-text" to "card-content"
+  
 
   var phone = document.createElement("div");
   phone.setAttribute("class", "card-content");
-  //changed from "p" to "div" & "card-text" to "card-content"
+  
 
   var address = document.createElement("div");
   address.setAttribute("class","card-content")
-  //changed from "p" to "div" & "card-text" to "card-content"
+  
 
 
   var span = document.createElement("span")
 
-  //make sure that card-body, card-title, and card-text, are in bulma <-- have one example of bulma on one side, 
-  //double check the append order (lines 80-83) <--make sure the order is correct.
 
   //Injection of data
-  name.textContent = "Name of brewery: " + data.name ; 
+  name.textContent = "Name of Brewery: " + data.name ; 
   phone.textContent = "Phone Number: " + data.phone;
-  address.textContent = "Address: " + data.address;
+  address.textContent = "Address: " + data.street+" "+ data.state+" "+data.postal_code;
 
 
   //Append
-  brewInfo.append.card
-  card.append(cardContent)
   cardHeader.append(span) 
     //changed from cardTitle to cardHeader
   cardContent.append(cardHeader,name,phone,address)
     //changed from cardText to cardContent
-  
+  card.append(cardContent)
+  var breweryResults = document.querySelector(".brewInfo");
+  breweryResults.append(card)
+
  
   
 
