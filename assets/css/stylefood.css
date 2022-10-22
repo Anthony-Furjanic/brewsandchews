@@ -10,26 +10,40 @@
 /*specific to the food box*/
 
 #searchButton {
-  background-color: var(--btn);
-  color: var(--text);
+  background-color: var(--accent1);
+  border: none;
+  color: var(--accent4);
   font-weight: bolder;
-  margin: 0 0 20px 0;
+  padding: 0 20px 0 20px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-sizing: content-box;
 } 
 
 #nextButton {
-  background-color: var(--btn);
-  color: var(--text);
+  background-color: var(--accent1);
+  border: none;
+  color: var(--accent4);
   font-weight: bolder;
-  margin: 0 0 20px 0;
+  padding: 0 20px 0 20px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-sizing: content-box;
 } 
 
-#foodLabel {
-  color: (--text2);
+.foodLabel {
+  color: var(--text);
   font-size:large;
 }
 
 #foodTitle {
-  color: (--text2);
+  color: var(--text);
   font-size:large;
 }
 
@@ -40,10 +54,7 @@
 }
 
 .recipeBox1 {
-  width: 50%
-  background-color: var(--background);
-  box-shadow: 2px 2px 2px 2px var(--accent2);
-  flex-direction: row;
+  box-shadow: 2px 2px 2px 2px #844e36;
 }
 
 .recipeBox1 label {
@@ -52,13 +63,12 @@
 
 #foodPic {
   background-color: var(--background);
-  box-shadow: 2px 2px 2px 2px var(--accent2);
+
 }
 
 #instructions {
-  background-color: #fff;
-  margin: 20px;
-  padding: 50px;
+  margin: 0px;
+  padding: 20px;
 }
 
 

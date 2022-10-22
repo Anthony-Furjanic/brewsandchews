@@ -8,18 +8,15 @@
 }
 
 .min-100-vh {
-    background-color: var(--background);
-    
+  background-color: var(--background);
 }
 
 .get-breweries {
-    display: flex;
-    margin: 10px;
-    flex-direction: column;
-    padding: 20 px;
+    margin: 0px;
+    background-color: var(--background);
+    padding: 20px;
     width: 100%;
-    box-shadow: 2px 2px 2px 2px  var(--accent2);
-  
+    box-shadow: 2px 2px 2px 2px #844e36;
   }
   
   
@@ -39,7 +36,14 @@
 
    .card {
     background-color: var(--background);
+
   }
+
+  .brewLabel {
+    color: var(--text);
+    font-size:large;
+  }
+
 
 
 

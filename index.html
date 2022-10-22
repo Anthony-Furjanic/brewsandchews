@@ -13,8 +13,9 @@
       rel="stylesheet"
       href="https://github.com/jgthms/bulma/blob/master/css/bulma.css"
     />
-    <!--<link rel="stylesheet" href="./assets/css/styleflex.css" />-->
     <link rel="stylesheet" href="./assets/css/stylebrewery.css" />
+    <link rel="stylesheet" href="./assets/css/stylefood.css" />
+    <link rel="stylesheet" href="./assets/css/styletrivia.css" />
     <link rel="stylesheet" href="./assets/css/styleall.css" />
     <script src="./assets/js/scriptfood.js" defer></script>
     <script src="./assets/js/scriptbrewery.js" defer></script>
@@ -28,8 +29,8 @@
     <header>
       <div class="tabs is-right is-boxed">
         <h1>Brews N Chews</h1>
-        <ul>
-          <li class="is-active"><a>Brews</a></li>
+        <ul class="is-active">
+          <li><a>Brews</a></li>
           <li><a>Chews</a></li>
         </ul>
       </div>
@@ -37,9 +38,11 @@
     <main>
       <div class="box px-1"></div>
       <section class="columns">
-        <div class="get-breweries column is-half">
+        <div class="get-breweries column is-one-third">
           <div class="field">
-            <label class="label">Type City Name to Find Local Brewery</label>
+            <label class="brewLabel"
+              >Type city name to find local brewery:</label
+            >
             <div class="control">
               <input
                 class="input"
@@ -51,37 +54,53 @@
               <button class="button" id="fetch-button">Search</button>
             </div>
             <section class="columns">
-              <div class="brewInfo column is-half"></div>
+              <div class="brewInfo column"></div>
               <!--created a div to link in the JS-->
             </section>
           </div>
         </div>
-        <div class="column is-half recipeBox1">
+        <div class="column is-one-third recipeBox1">
           <div class="field">
-            <label class="label">Enter favorite food type here:</label>
+            <label class="foodLabel">Enter favorite food type here:</label>
             <div class="control">
               <input
                 class="input"
                 id="foodSearch"
                 type="text"
                 placeholder="Beef"
-                style="width: 20vw">
-           
-              <button class="button" id="searchButton">Get Recipe</button>
-              <button class="button" id="nextButton">Next</button>
+                style="width: 20vw"
+              />
+              <div>
+                <button class="button" id="searchButton">Get Recipe</button>
+                <button class="button" id="nextButton">Next</button>
+              </div>
             </div>
-            </div>
-                    <div id="foodTitle"></div>
-                    <div id="foodPic"></div>
-                    <div id="instructions"></div>
+          </div>
+          <div id="foodTitle"></div>
+          <div id="foodPic"></div>
+          <div id="instructions"></div>
+        </div>
+        <div class="triviaBox column is-one-third">
+          <p class="bd-notification is-info">
+            <button id="Triviabutton">hello</button>
+          </p>
         </div>
       </section>
-      <section>
-        <div class="column">
-            <p class="bd-notification is-info">
-            <button id="Triviabutton"></button>
-            </p>
+      <section class="form">
+        <div class="columns is-full">
+          <div class="column">
+            <p>First column</p>
+          </div>
         </div>
+
+        <div class="form column is-full">
+          <div class="column">
+            <p>Please share Here</p>
+          </div>
+        </div>
+      </section>
+      <section class="bottomBorder">
+        <p style="font-size: 30px">Please enjoy!</p>
       </section>
     </main>
   </body>

@@ -8,7 +8,7 @@ let question= ["What is the name of the process of making Beer?","Humans all ove
 "what is the oldest beverage in the world?","Which country has the most individual brands of Beer?"]
 let answer= ["Brewing","Brewery","50 billion gallons","Zythology","Pilsner","Czech Republic","1st Day of August","Tea","Mead (A alcoholic drink that was discovered mistakenly)","Belgium"]
 
-let generateBtn= document.querySelector("#Triviabutton")
+let generateBtn= document.querySelector("Triviabutton")
 console.log(generateBtn)
 
 
@@ -18,7 +18,7 @@ console.log(generateBtn)
 
 
 function flashquestion(){
-let flashquestion= question [1];
+let flashquestion = question [0];
 console.log(abc123);
 
 
