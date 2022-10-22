@@ -1,0 +1,29 @@
+:root {
+    --background: #86b3d1;
+    --accent1: #aaa0a0;
+    --accent2: #844e36;
+    --accent3: #8e8268;
+    --accent4: #474853;
+    --text: #ffffff;
+  }
+  
+  /*specific to the food box*/
+  
+  #Triviabutton {
+    background-color: var(--accent1);
+    border: none;
+    color: var(--accent4);
+    font-weight: bolder;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-sizing: content-box;
+  } 
+
+  .triviaBox {
+    box-shadow: 2px 2px 2px 2px #844e36;
+  }
+  
