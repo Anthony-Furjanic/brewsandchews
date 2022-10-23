@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
     <link
       rel="stylesheet"
-      href="https://github.com/jgthms/bulma/blob/master/css/bulma.css"
-    />
+      href="https://github.com/jgthms/bulma/blob/master/css/bulma.css"/>
     <link rel="stylesheet" href="./assets/css/stylebrewery.css" />
     <link rel="stylesheet" href="./assets/css/stylefood.css" />
     <link rel="stylesheet" href="./assets/css/styletrivia.css" />
@@ -30,8 +28,8 @@
       <div class="tabs is-right is-boxed">
         <h1>Brews N Chews</h1>
         <ul class="is-active">
-          <li><a>Brews</a></li>
-          <li><a>Chews</a></li>
+          <li><a href="#citysearch">Brews</a></li>
+          <li><a href="#foodsearch">Chews</a></li>
         </ul>
       </div>
     </header>
@@ -41,16 +39,14 @@
         <div class="get-breweries column is-one-third">
           <div class="field">
             <label class="brewLabel"
-              >Type city name to find local brewery:</label
-            >
+              >Type city name to find local brewery:</label>
             <div class="control">
               <input
                 class="input"
                 id="citySearch"
                 type="text"
                 placeholder="Philadelphia"
-                style="width: 20vw"
-              />
+                style="width: 20vw"/>
               <button class="button" id="fetch-button">Search</button>
             </div>
             <section class="columns">
@@ -68,8 +64,7 @@
                 id="foodSearch"
                 type="text"
                 placeholder="Beef"
-                style="width: 20vw"
-              />
+                style="width: 20vw"/>
               <div>
                 <button class="button" id="searchButton">Get Recipe</button>
                 <button class="button" id="nextButton">Next</button>
