@@ -43,7 +43,7 @@
 <h2 align="center">
  Finding a brewery </h2>
 
-The user can sign-up and log-in to our store which allows them to have their own cart and to checkout safely. Tthey can also manually log-out if they so choose to. 
+The user can sign-up and log-in to our store which allows them to have their own cart and to checkout safely. They can also manually log-out if they so choose to. 
 
 <p align="center">
   <!-- <img src="./images/userAuth.gif"> -->
@@ -194,7 +194,7 @@ _ _ _
 
 <h1 align="center">Creators</h1>
 
-+  Michele Tornetta: [Github]( )
++  Michele Tornetta: [Github](https://github.com/MicheleTornetta)
 +  Amy Lipscomb: [Github](https://github.com/AmyLipscomb)
 +  Cassandre Beauzil : [Github]( )
 +  Anthony Furjanic: [Github](https://github.com/Anthony-Furjanic)
