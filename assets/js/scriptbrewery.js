@@ -141,7 +141,7 @@ function displayBeerInfo(data) {
   address.setAttribute("class", "card-content")
 
   var website = document.createElement("a");
-  website.setAttribute("src", "card-content");
+  website.setAttribute("href", "card-content");
   
 
 
