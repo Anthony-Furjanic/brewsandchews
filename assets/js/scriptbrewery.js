@@ -61,9 +61,9 @@ function displayBeerInfo(data) {
   var name = document.createElement("div");
   name.setAttribute("class", "card-content");
 
-  var website = document.createElement("a");
-  website.setAttribute("src", data.website_url);
-  website.textContent = "Link"
+  // var website = document.createElement("a");
+  // website.setAttribute("src", data.website_url);
+  // website.textContent = "Link"
 
   let phone = document.createElement("div");
   phone.setAttribute("class", "card-content");
@@ -72,6 +72,9 @@ function displayBeerInfo(data) {
   var address = document.createElement("div");
   address.setAttribute("class", "card-content")
 
+  var website = document.createElement("a");
+  website.setAttribute("src", "card-content");
+  
 
 
   let span = document.createElement("span")
@@ -81,6 +84,7 @@ function displayBeerInfo(data) {
   name.textContent = "Name of Brewery: " + data.name;
   phone.textContent = "Phone Number: " + data.phone;
   address.textContent = "Address: " + data.street + " " + data.state + " " + data.postal_code;
+  website.textContent = "Website: " + data.website_url;
 
 
   //Append
