@@ -48,7 +48,7 @@
 }
 
 #foodSearch {
-  color: var(--text);
+  color: var(--accent4);
   font-weight: bolder;
   margin: 0 0 20px 0;
 }

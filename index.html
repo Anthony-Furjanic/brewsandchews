@@ -45,7 +45,7 @@
                 class="input"
                 id="citySearch"
                 type="text"
-                placeholder="Philadelphia"
+                value="Philadelphia"
                 style="width: 20vw"/>
               <button class="button" id="fetch-button">Search</button>
             </div>
@@ -63,7 +63,7 @@
                 class="input"
                 id="foodSearch"
                 type="text"
-                placeholder="Beef"
+                value="Beef"
                 style="width: 20vw"/>
               <div>
                 <button class="button" id="searchButton">Get Recipe</button>
@@ -84,14 +84,11 @@
       <section class="form">
         <div class="columns is-full">
           <div class="column">
-            <p>First column</p>
+            <p><h3  id="savedLocations">Saved Brewery Locations</h3></p>
           </div>
         </div>
-
         <div class="form column is-full">
-          <div class="column">
-            <p>Please share Here</p>
-          </div>
+            <ul id="locationChoices"> </ul>
         </div>
       </section>
       <section class="bottomBorder">
