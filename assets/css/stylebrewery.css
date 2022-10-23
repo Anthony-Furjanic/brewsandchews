@@ -27,9 +27,7 @@
     font-weight: bolder;
     padding: 0 20px 0 20px;
     text-align: center;
-    margin: auto;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     box-sizing: content-box;
   }
@@ -80,10 +78,10 @@
 
   }
 
-    .savedLocationButton {
-      margin: 20px 0 0 0;
-      padding: 20px 0 0 20px;
-    }
+  .savedLocationButton {
+    margin: 20px 0 0 0;
+    padding: 0 5px 0 5px;
+  }
 
 
   

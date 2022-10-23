@@ -27,10 +27,6 @@
     <header id="pageHeader">
       <div class="tabs is-right is-boxed">
         <h1 id="pageTitle">Brews & Chews</h1>
-        <!-- <ul class="is-active"> -->
-          <!-- <li><a href="#citysearch">Brews</a></li>
-          <li><a href="#foodsearch">Chews</a></li>
-        </ul> -->
       </div>
     </header>
     <main>
@@ -47,11 +43,10 @@
                 type="text"
                 value="Philadelphia"
                 style="width: 20vw"/>
-              <button class="button" id="fetch-button">Search</button>
+              <p><button class="button" id="fetch-button">Search</button></p>
             </div>
             <section class="columns">
               <div class="brewInfo column"></div>
-              <!--created a div to link in the JS-->
             </section>
           </div>
         </div>
@@ -76,29 +71,30 @@
           <div id="instructions"></div>
         </div>
         <div class="triviaBox column is-one-third">
-          <p class="bd-notification is-info">
-            <button id="Triviabutton" >
-                Trivia Question
-            </button>  
-        </p>
+
         <p id="questionField">
-         Answer
+         Question:
         </p>
+        
             <input type="radio" id="1answer" name="groupOfAnswers">
                 <label for="1answer" id="answer1">Answer1</label>
             <input type="radio" id="2answer" name="groupOfAnswers">
                 <label for="2answer" id="answer2">Answer2</label>
             <input type="radio" id="3answer" name="groupOfAnswers">
                 <label for="3answer" id="answer3">Answer3</label>
-    </div>
+                <p class="bd-notification is-info">
+                  <button class="button" id="Triviabutton" >
+                      Trivia Question
+                  </button>  
+              
+              <button class="button" id="TriviaButton2">Submit</button></p>
+              </div>
       </section>
       <section class="form">
         <div class="columns is-full">
-          <!-- <div class="column"> -->
             <h3 id="savedLocations">Saved Brewery Locations</h3>
           </div>
         </div>
-        <!-- <div class="form column is-full"> -->
             <ul id="locationChoices"> </ul>
         </div>
       </section>
