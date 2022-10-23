@@ -194,9 +194,9 @@ _ _ _
 
 <h1 align="center">Creators</h1>
 
-+  Michele Tornetta: [Github]( )
++  Michele Tornetta: [Github](https://github.com/MicheleTornetta)
 +  Amy Lipscomb: [Github](https://github.com/AmyLipscomb)
-+  Cassandre Beauzil : [Github]( )
++  Cassandre Beauzil : [Github](https://github.com/Cassandre0617)
 +  Anthony Furjanic: [Github](https://github.com/Anthony-Furjanic)
 +  Ramsey Banda: [Github]( )
 
