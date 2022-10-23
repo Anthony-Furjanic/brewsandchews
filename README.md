@@ -17,7 +17,6 @@
 
 
 1. 
-
 2. 
 3. 
 4. 
@@ -195,9 +194,9 @@ _ _ _
 
 <h1 align="center">Creators</h1>
 
-+  : [Github]( )
-+  : [Github]( )
-+  : [Github]( )
-+  : [Github]( )
-+  : [Github]( )
++  Michele Tornetta: [Github]( )
++  Amy Lipscomb: [Github](https://github.com/AmyLipscomb)
++  Cassandre Beauzil : [Github]( )
++  Anthony Furjanic: [Github](https://github.com/Anthony-Furjanic)
++  Ramsey Banda: [Github]( )
 
