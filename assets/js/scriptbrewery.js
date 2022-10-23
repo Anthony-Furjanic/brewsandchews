@@ -2,12 +2,80 @@ var fetchButton = document.getElementById('fetch-button');
 fetchButton.addEventListener('click', getApi);
 let citySearch = document.getElementById('citySearch');
 
+//to get locations from local storage
+function getLocations() {
+  let locations = localStorage.getItem("savedLocations");
+  if (locations === null) {
+    locations = [];
+  } else {
+    locations = JSON.parse(locations);
+  }
+  return locations;
+}
+
+//to save the location
+function saveLocation(city) {
+  let currentLocation = getLocations();
+  let location = {
+    city: city
+  };
+
+  let found = false;
+
+  for (let i = 0; i < currentLocation.length; i++) {
+    if (currentLocation[i].city === city) {
+      found = true;
+    }
+  }
+
+  if (!found) {
+    currentLocation.push(location);
+  }
+
+  localStorage.setItem('savedLocations', JSON.stringify(currentLocation));
+}
+
+function fillLocationsList(){
+  let locationChoices = getLocations();
+
+}
+
+// To save to local storage
+
+function addLocations(){
+
+  let locationChoicesEl = document.getElementById("locationChoices");
+  let locations = getLocations();
+  locationChoicesEl.innerHTML = "";
+  for(let i = 0; i < locations.length; i++){
+    console.log(locations[i]);
+    let listEl = document.createElement("li");
+    let buttonEl = document.createElement("button");
+    buttonEl.classList.add("savedBtnLocation");
+    buttonEl.innerText = locations[i].city;
+
+    buttonEl.onclick = function() {
+      document.getElementById("citySearch").value = locations[i].city;
+      getApi();
+    };
+
+    listEl.appendChild(buttonEl);
+    locationChoicesEl.appendChild(listEl);
+  }
+}
+
+addLocations();
+
+//API call
 
 function getApi() {
+  saveLocation(citySearch.value);
+
+  addLocations();
+
   fetch(`https://api.openbrewerydb.org/breweries?by_city=${citySearch.value}&per_page=3`)
     .then(response => response.json())
     .then(function (data) {
-      console.log(data)
       var breweryResults = document.querySelector(".brewInfo");
       breweryResults.innerHTML="";
       for (var i = 0; i < data.length; i++) {

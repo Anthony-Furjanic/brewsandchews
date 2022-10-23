@@ -5,6 +5,7 @@
   --accent3: #8e8268;
   --accent4: #474853;
   --text: #ffffff;
+  --fakecolor: #eeeeee;
 }
 
 .min-100-vh {
@@ -44,7 +45,30 @@
     font-size:large;
   }
 
+  #savedLocations {
+    /*padding: 0 20px 0 20px;*/
+    margin: 0 20px 0 20px;
+  }
 
+  #citySearch{
+    color: var(--accent4);
+    font-weight: bolder;
+    margin: 0 0 20px 0;
+  }
+
+  .savedBtnLocation {
+    background-color: var(--accent1);
+    border: none;
+    color: var(--accent4);
+    font-weight: bolder;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-sizing: content-box; 
+  }
 
 
 
