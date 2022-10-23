@@ -43,7 +43,7 @@
 <h2 align="center">
  Finding a brewery </h2>
 
-The user can sign-up and log-in to our store which allows them to have their own cart and to checkout safely. Tthey can also manually log-out if they so choose to. 
+The user can sign-up and log-in to our store which allows them to have their own cart and to checkout safely. They can also manually log-out if they so choose to. 
 
 <p align="center">
   <!-- <img src="./images/userAuth.gif"> -->

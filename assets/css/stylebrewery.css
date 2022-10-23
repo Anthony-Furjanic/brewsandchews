@@ -5,7 +5,6 @@
   --accent3: #8e8268;
   --accent4: #474853;
   --text: #ffffff;
-  --fakecolor: #eeeeee;
 }
 
 .min-100-vh {
@@ -45,9 +44,14 @@
     font-size:large;
   }
 
+  .card-header-title {
+    color: var(--text);
+    font-size:large;
+  }
+
   #savedLocations {
-    /*padding: 0 20px 0 20px;*/
-    margin: 0 20px 0 20px;
+    /*padding: 20px 20px 0 20px;*/
+    margin: 20px 20px 0 20px;
   }
 
   #citySearch{
@@ -70,9 +74,16 @@
     box-sizing: content-box; 
   }
 
+  .card-content{
+    color: var(--text);
+    padding: 5px 0 0 0;
 
+  }
 
-
+    .savedLocationButton {
+      margin: 20px 0 0 0;
+      padding: 20px 0 0 20px;
+    }
 
 
   
