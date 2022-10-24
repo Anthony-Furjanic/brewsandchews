@@ -44,7 +44,11 @@ ENTER SOME TEXT HERE.
 <h2 align="center">
  Finding a brewery </h2>
 
+<<<<<<< HEAD
 
+=======
+The user can sign-up and log-in to our store which allows them to have their own cart and to checkout safely. They can also manually log-out if they so choose to. 
+>>>>>>> 05f9c8db9043b9064b52f281929962a05f394634
 
 <p align="center">
   <!-- <img src="./images/userAuth.gif"> -->

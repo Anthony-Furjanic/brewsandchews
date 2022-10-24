@@ -5,7 +5,6 @@
   --accent3: #8e8268;
   --accent4: #474853;
   --text: #ffffff;
-  --fakecolor: #eeeeee;
 }
 
 .min-100-vh {
@@ -13,7 +12,7 @@
 }
 
 .get-breweries {
-    margin: 0px;
+    margin: 0 0 0 20px;
     background-color: var(--background);
     padding: 20px;
     width: 100%;
@@ -28,9 +27,7 @@
     font-weight: bolder;
     padding: 0 20px 0 20px;
     text-align: center;
-    margin: auto;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     box-sizing: content-box;
   }
@@ -45,9 +42,15 @@
     font-size:large;
   }
 
+  .card-header-title {
+    color: var(--text);
+    font-size:large;
+  }
+
   #savedLocations {
-    /*padding: 0 20px 0 20px;*/
-    margin: 0 20px 0 20px;
+    padding: 0px 0px 20px 0px;
+    margin: 20px 20px 0 35px;
+
   }
 
   #citySearch{
@@ -70,10 +73,22 @@
     box-sizing: content-box; 
   }
 
+  .card-content{
+    color: var(--text);
+    padding: 5px 0 0 0;
 
+  }
 
+  .savedLocationButton {
+    margin: 20px 0 0 0;
+    padding: 0 5px 0 5px;
+    color: var(--accent4);
+  }
 
-
+  .form {
+    box-shadow: 2px 2px 2px 2px #844e36;
+    margin: 0 0 5px 8px;
+  }
 
   
  

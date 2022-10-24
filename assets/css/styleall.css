@@ -78,7 +78,7 @@
     }
     
     a:visited {
-        color: var(--accent2);
+        color: var(--text);
     }
     
     p {
@@ -89,7 +89,21 @@
     
     /*END GLOBAL ELEMENTS */
     
-    /*THIS IS THE HEADER SECTION W/NAV BAR*/
+    /*THIS IS HEADER SECTION W/NAV BAR*/
+
+    #pageHeader {
+        width: 100%;
+    }
+
+    .tabs {
+        width: 100%;    
+    }
+
+    #pageTitle {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
 
     .header-picture {
         background-image: url("/assets/images/beertaps.png");
