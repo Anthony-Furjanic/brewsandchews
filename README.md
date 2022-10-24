@@ -30,38 +30,55 @@ ENTER SOME TEXT HERE.
 
 
 
-<h2 align="center"> Why the APIs?</h2>
+<h2 align="center"> APIs</h2>
+
+Once our group decided on what the purpose of our website should be, it was time to find the right APIs to carry out our plan. As a team, we looked through various APIs related to food and alcohol. We ultimately decided on the following two APIs:
+
++ [Open Brewery](https://www.openbrewerydb.org/documentation#by_city)
+
+- [Spoonacular](https://spoonacular.com/food-api)
+
+We chose [Open Brewery](https://www.openbrewerydb.org/documentation#by_city) for the alcoholic beverages because it provided the social aspect that we were looking for, for our users. When people attend a brewery it's an experience. It's a way to bond with friends, and mix and match your favorite beers with new ones that sound appealing! We believe that everyone should have that opportunity to let loose in their city, which is why chose to use the local brewery by city API. 
+
+With our beverage API selected, it was now time to find one related to food, which is where [Spoonacular](https://spoonacular.com/food-api) comes into play. We knew from the beginning that we wanted to provide a culinary experience as well. We talked about the responsibilities of being an adult, and having to cook. It's so easy to get into a culinary rut. However, with our website, a user can just as easily break free, and try new recipes in the comfort of their own home. The best part is that even if you may not know exactly what recipe to do, the API does the thinking for you! All you have to do is type in a food item that you're craving, and a recipe will appear. If you don't like the first one, then just select, 'Next', and another recipe will pop up. 
+
+Our next step was to create successful [fetch's](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to both APIs. 
+
+```
+Open Brewery Fetch
+```
+![Brewery-Fetch](./assets/images/brewery-fetch.png)
+```
+Spoonacular Fetch
+```
+
+![Food-Fetch](./assets/images/food-fetch2.png)
+
 
 
 <h2 align="center"> </h2>
 
 
 
-<h1 align="center"> Gifs Demo</h1>
+<h1 align="center"> View our Demo! </h1>
 
 
 
 <h2 align="center">
- Finding a brewery </h2>
+ Find a brewery </h2>
 
-<<<<<<< HEAD
-
-=======
-The user can sign-up and log-in to our store which allows them to have their own cart and to checkout safely. They can also manually log-out if they so choose to. 
->>>>>>> 05f9c8db9043b9064b52f281929962a05f394634
 
 <p align="center">
-  <!-- <img src="./images/userAuth.gif"> -->
+  <img src="./assets/images/brewery-example-gif.gif" >
 </p>
 
 ___
 <h2 align="center">
- Finding a food recipe </h2>
-
+ Find a food recipe </h2>
 
 
 <p align="center">
-  <!-- <img src="./images/Products.gif"> -->
+  <img src="./assets/images/food-example-gif.gif">
 </p>
 
 ___
@@ -141,23 +158,6 @@ ___
 
 
 
-```
-text here
-```
-
-
-
-```
-text here
-```
-
-```
-text here
-```
-
-
-
-
 <p align="center">
 <!-- <img src="./images/authRoutes.png"></p> -->
 
@@ -189,9 +189,12 @@ _ _ _
 
 <h1 align="center">Technologies</h1>
 
-+ Javascript
++ JavaScript
 - [Bulma](https://bulma.io/documentation/) 
-+ APIs
++ [Open Brewery](https://www.openbrewerydb.org/documentation#by_city)
+- [Spoonacular](https://spoonacular.com/food-api)
++ VS Code
+- GIPHY CAPTURE
 
 <h1 align="center">Enter Deployed Link</h1>
 
