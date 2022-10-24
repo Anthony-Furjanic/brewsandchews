@@ -121,7 +121,7 @@ function displayBeerInfo(data) {
   let website = document.createElement("a");
   website.classList.add("savedLocationButton");
   website.setAttribute("href", data.website_url);
-  
+  website.setAttribute("target", '_blank');
 
 
   let span = document.createElement("span")
