@@ -37,6 +37,7 @@
 
   .triviaBox {
     box-shadow: 2px 2px 2px 2px #844e36;
+    margin: 0 20px 0px 8px;
   }
   
   #questionField {

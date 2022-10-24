@@ -140,7 +140,7 @@ function displayBeerInfo(data) {
   cardContent.append(cardHeader, name, phone, address, website)
   //changed from cardText to cardContent
   card.append(cardContent)
-  var breweryResults = document.querySelector(".brewInfo");
+  let breweryResults = document.querySelector(".brewInfo");
   breweryResults.append(card)
 
 

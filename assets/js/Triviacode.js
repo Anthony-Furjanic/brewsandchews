@@ -62,7 +62,7 @@ const questionAndAnswer= [
 
 
 function QuestionRetrieve(){
- const randomQuestion= questionAndAnswer[Math.floor(Math.random()*questionAndAnswer.length)]
+const randomQuestion= questionAndAnswer[Math.floor(Math.random()*questionAndAnswer.length)]
 console.log(randomQuestion.questions) 
 console.log(randomQuestion.answers)
 

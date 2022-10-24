@@ -12,7 +12,7 @@
 }
 
 .get-breweries {
-    margin: 0px;
+    margin: 0 0 0 20px;
     background-color: var(--background);
     padding: 20px;
     width: 100%;
@@ -48,8 +48,9 @@
   }
 
   #savedLocations {
-    /*padding: 20px 20px 0 20px;*/
-    margin: 20px 20px 0 20px;
+    padding: 0px 0px 20px 0px;
+    margin: 20px 20px 0 35px;
+
   }
 
   #citySearch{
@@ -81,8 +82,13 @@
   .savedLocationButton {
     margin: 20px 0 0 0;
     padding: 0 5px 0 5px;
+    color: var(--accent4);
   }
 
+  .form {
+    box-shadow: 2px 2px 2px 2px #844e36;
+    margin: 0 0 5px 8px;
+  }
 
   
  
