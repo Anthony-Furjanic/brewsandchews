@@ -18,20 +18,67 @@
         margin: 0px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    
-    body {
-        background-color: var(--background);
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
     }
-    
+
+    .bodyStyle {
+        background-color: var(--background);
+        display:flex;
+      }
+
+      h1 {
+        font-size: xx-large;
+        color: var(--text2);
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 0 20px 10px 20px;
+      }
+      
+      h2 {
+        font-size: x-large;
+        color: var(--text2);
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 0 20px 0 20px;
+      }
+      
+      h3 {
+        font-size: larger;
+        color: var(--text);
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 0 20px 10px 0;
+        font-weight: bolder;
+      }
+      
+      p {
+        color: var(--text);
+        padding: 0 0 10px 0;
+      }
+
+      li {
+        color: var(--text);
+        padding: 5px 20px 2px 20px;
+        list-style-type: none;
+        font-size: larger;
+        list-style: circle;
+
+      }
+
+   
     a {
         color: var(--text);
         text-decoration: none;
         background-color: var(--accent1);
-    
+        padding: 20px 20px 20px 20px;
     }
     
     a:visited {
-        color: var(--accent2);
+        color: var(--text);
     }
     
     p {
@@ -42,7 +89,27 @@
     
     /*END GLOBAL ELEMENTS */
     
-    /*THIS IS THE HEADER SECTION W/NAV BAR*/
+    /*THIS IS HEADER SECTION W/NAV BAR*/
+
+    #pageHeader {
+        width: 100%;
+    }
+
+    .tabs {
+        width: 100%;    
+    }
+
+    #pageTitle {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .header-picture {
+        background-image: url("/assets/images/beertaps.png");
+        color: var(--text2);
+      }
+      
     
     header {
         padding: 20px;
@@ -84,6 +151,7 @@
         list-style-type: none;
         background-color: var(--accent1);
         color: var(--accent4);
+        
         /*text-shadow: 0px 0px #333333;*/
     }
     
@@ -193,5 +261,29 @@
         /*text-shadow: 2px 2px #333333;*/
     } 
         
+    /*Footer Form*/
+    .footerForm {
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 10px;
+        color: var(--text);
+        
+    }
 
-    
+
+        /*Bottom Boarder backgroud*/
+        .bottomBorder {
+            background-image: url("../images/goodFood2.png");
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 10px;
+            color: var(--text);
+            text-shadow: 2px 2px #333333;
+        }
+
+        .is-active {
+  
+        }

@@ -52,9 +52,9 @@ function searchFood() {
       let ingredientsArray = [];
 
       // Loop through each instruction
-      for (let i = 0; i < results.results[currentItem].analyzedInstructions[0].steps.length; i++) {
+      for (var i = 0; i < results.results[currentItem].analyzedInstructions[0].steps.length; i++) {
         // Loop through each ingredient
-        for (let j = 0; j < results.results[currentItem].analyzedInstructions[0].steps[i].ingredients.length; j++) {
+        for (var j = 0; j < results.results[currentItem].analyzedInstructions[0].steps[i].ingredients.length; j++) {
           // Grab ingredient we are at and store it in this varialbe to save some typing
           const ingredient = results.results[currentItem].analyzedInstructions[0].steps[i].ingredients[j].name;
 
@@ -73,7 +73,7 @@ function searchFood() {
       }
 
       // Loop through each ingredient found and convert it to an html element
-      for (let i = 0; i < ingredientsArray.length; i++) {
+      for (var i = 0; i < ingredientsArray.length; i++) {
         // Create the HTML element to stick the ingredient into
         let ingredientListItem = document.createElement('li');
 
@@ -93,7 +93,7 @@ function searchFood() {
       //pull in the title and picture of the dish
       document.getElementById("foodTitle").innerText = results.results[currentItem].title;
       document.getElementById("foodPic").innerHTML = "<img src='" + results.results[currentItem].image + "'>";
-
+      console.log('text');
     });
   });
-}
+};
