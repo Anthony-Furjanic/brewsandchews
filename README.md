@@ -1,11 +1,11 @@
 <p align="center">
-  <!-- <img src= -->
+  
 </p>
 
 
 <h1 align="center"> Brews & Chews</h1>
 
-Brews & Chews is a website designed with both the extrovert and introvert in mind. Are you looking for fun weekend plans? Or want to enjoy some adult beverages in a new city but not sure where to go? If you've answered 'Yes' to either question, then our website is for you! Within the brewery search button, you can easily type in your desired city (as long as it's within the United States), and a list of local breweries within the area will appear. All of the important details, like name, address, phone number and website will be at your fingertips with just one click! Now, if you answered 'No' to either or both questions mentioned above, don't worry, because there's still something useful for you too. If you're more of a homebody, you can still enjoy our website by looking up fun recipes with a simple search. All you have to do is type in a food item that you enjoy, click 'Get Recipe' and a new recipe will appear with a picture of what it should look like! If you want more, just click 'Next' and more tasty recipes are headed your way. That's not all though! While you're cooking, feel free to take a fun quiz about beer, and after you've enjoyed your delicious dinner, leave a suggestion for our website! 
+Brews & Chews is a website designed with both the extrovert and introvert in mind. Are you looking for fun weekend plans? Or want to enjoy some adult beverages in a new city but not sure where to go? If you've answered 'Yes' to either question, then our website is for you! Within the brewery search button, you can easily type in your desired city (as long as it's within the United States), and a list of local breweries within the area will appear. All of the important details, like name, address, phone number and website will be at your fingertips with just one click! Now, if you answered 'No' to either or both questions mentioned above, don't worry, because there's still something useful for you too. If you're more of a homebody, you can still enjoy our website by looking up fun recipes with a simple search. All you have to do is type in a food item that you enjoy, click 'Get Recipe' and a new recipe will appear with a picture of what it should look like! If you want more, just click 'Next' and more tasty recipes are headed your way. That's not all though! While you're cooking or enjoying your delicious meal, feel free to take a fun quiz about beer!  
 
 <h1 align="center"> Getting Started</h1>
 
@@ -24,7 +24,7 @@ This project, much like the food we hope you'll have fun creating, was made with
 6. The user can also type in a food item within the food search bar. 
 7. The user will have access to recipes that include the food item after they click the button, 'Get Recipe'. The recipes will appear one at a time. 
 8. The user can view other recipes by clicking, the 'Next' button.
-9. The user will also be able to provide suggestions by accessing a form to input their information. 
+
 
 
 
@@ -85,27 +85,13 @@ ___
 
 <h2 align="center"> Take a quiz! </h2>
 
-ENTER GIF HERE
-
-<!-- <p align="center"><img src="./images/cart2.gif"> -->
-</p>
-
-_ _ _
-
-<h2 align="center"> Make a suggestion</h2>
-
-ENTER GIF HERE
-
 
 
 <p align="center">
-<!-- <img src="./images/cartModel.png"></p> -->
+  <img src="./assets/images/brewquiz2-example-gif.gif">
+</p>
 
-<h4 align="center"></h4>
-
-
-
-
+_ _ _
 
 _ _ _
 
