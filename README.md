@@ -121,9 +121,17 @@ _ _ _
 
 ---
 
-<h1 align="center">Enter Deployed Link</h1>
+<h1 align="center">Brews & Chews Deployed Link</h1>
 
-Thanks for taking the time to view our site! Much like the food we make, this site was created with love, so we hope you enjoy. 
+[Deployed Link](https://anthony-furjanic.github.io/brewsandchews/)
+
+
+
+
+<p>Thanks for taking the time to view our site! We hope you enjoy &#128515;</p>
+
+
+
 
 
 <h1 align="center">Creators</h1>
