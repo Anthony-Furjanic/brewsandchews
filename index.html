@@ -4,17 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
-    <link
-      rel="stylesheet"
-      href="https://github.com/jgthms/bulma/blob/master/css/bulma.css"/>
-    <link rel="stylesheet" href="./assets/css/stylebrewery.css" />
-    <link rel="stylesheet" href="./assets/css/stylefood.css" />
-    <link rel="stylesheet" href="./assets/css/styletrivia.css" />
-    <link rel="stylesheet" href="./assets/css/styleall.css" />
+    <link rel="stylesheet"href="./assets/css/reset.css" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <link rel="stylesheet"href="https://github.com/jgthms/bulma/blob/master/css/bulma.css"/>
+    <link rel="stylesheet"href="./assets/css/stylebrewery.css" />
+    <link rel="stylesheet"href="./assets/css/stylefood.css" />
+    <link rel="stylesheet"href="./assets/css/styletrivia.css" />
+    <link rel="stylesheet"href="./assets/css/styleall.css" />
     <script src="./assets/js/scriptfood.js" defer></script>
     <script src="./assets/js/scriptbrewery.js" defer></script>
     <script src="./assets/js/Triviacode.js" defer></script>
@@ -22,7 +18,7 @@
 
     <title>Brews & Chews</title>
   </head>
-
+<!-- title section -->
   <body class="bodyStyle clearfix">
     <header id="pageHeader">
       <div class="tabs is-right is-boxed">
@@ -30,8 +26,10 @@
       </div>
     </header>
     <main>
+      <!-- setting of the 3 columns -->
       <div class="box px-1"></div>
       <section class="columns">
+        <!-- brewery section -->
         <div class="get-breweries column is-one-third">
           <div class="field">
             <label class="brewLabel"
@@ -50,6 +48,7 @@
             </section>
           </div>
         </div>
+        <!-- Food section -->
         <div class="column is-one-third recipeBox1">
           <div class="field">
             <label class="foodLabel">Enter favorite food type or liquor here:</label>
@@ -66,22 +65,23 @@
               </div>
             </div>
           </div>
+          <!-- containers to hold the information pulled in by the food api -->
           <div id="foodTitle"></div>
           <div id="foodPic"></div>
           <div id="instructions"></div>
         </div>
         <div class="triviaBox column is-one-third">
-
+          <!-- start of the 3rd column trivia quiz -->
         <p id="questionField">
          Question:
         </p>
         
-            <input type="radio" id="answer1input" name="groupOfAnswers">
-                <label for="answer1input" id="answer1">Answer1</label>
-            <input type="radio" id="answer2input" name="groupOfAnswers">
-                <label for="answer2input" id="answer2">Answer2</label>
-            <input type="radio" id="answer3input" name="groupOfAnswers">
-                <label for="answer3input" id="answer3">Answer3</label>
+            <input type="radio" id="answerInput1input" name="groupOfAnswers">
+                <label for="answerInput1input" id="answer1">Answer1</label>
+            <input type="radio" id="answerInput2input" name="groupOfAnswers">
+                <label for="answerInput2input" id="answer2">Answer2</label>
+            <input type="radio" id="answerInput3input" name="groupOfAnswers">
+                <label for="answerInput3input" id="answer3">Answer3</label>
                 <p class="bd-notification is-info">
                   <button class="button" id="Triviabutton" >
                       Trivia Question
@@ -93,6 +93,7 @@
       </section>
       <section class="form">
         <div class="columns is-full">
+          <!-- local storage for the brewery locations -->
             <h3 id="savedLocations">Saved Brewery Locations</h3>
           </div>
         </div>
