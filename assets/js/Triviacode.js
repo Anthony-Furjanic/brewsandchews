@@ -81,6 +81,9 @@ const questionAndAnswer = [
 ];
 
 function QuestionRetrieve() {
+  var myanswerelement=document.querySelector("#myanswer")
+myanswerelement.innerHTML= ""
+  console.log("inside question retrieve function")
   const randomQuestion =
     questionAndAnswer[Math.floor(Math.random() * questionAndAnswer.length)];
   console.log(randomQuestion.questions);
@@ -106,16 +109,22 @@ function QuestionRetrieve() {
   document.getElementById(answerelement[1]+"input").setAttribute("data-correct","wrong") 
   document.getElementById(answerelement[2]+"input").setAttribute("data-correct","correct")
 
-function checkanswer(){
-  checkanswer=document.querySelector("[name=groupOfAnswers]:checked").getAttribute("data-correct")
 }
-TriviaButton2.addEventListener("click",checkanswer)
+TriviaButton2.addEventListener("click",function(){
   
+var myanswer=document.querySelector("[name=groupOfAnswers]:checked").getAttribute("data-correct")
+console.log(myanswer)
+var myanswerelement=document.querySelector("#myanswer")
+myanswerelement.innerHTML= ""
+myanswerelement.textContent= myanswer
+})
+
+
   //   trivquestions = trivquestions[Math.floor(Math.random()*
   //     (trivquestions.length))];
   //     return trivquestions
   // console.log(trivquestions);
-}
+
 
 // Create button to submit answers
 // need form tag around radio buttons
