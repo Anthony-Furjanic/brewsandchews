@@ -105,9 +105,9 @@ myanswerelement.innerHTML= ""
   document.getElementById(answerelement[1]).innerHTML = randomQuestion.answers[1];
   document.getElementById(answerelement[2]).innerHTML = randomQuestion.rightans[0];
 
-  document.getElementById(answerelement[0]+"input").setAttribute("data-correct","wrong")
-  document.getElementById(answerelement[1]+"input").setAttribute("data-correct","wrong") 
-  document.getElementById(answerelement[2]+"input").setAttribute("data-correct","correct")
+  document.getElementById(answerelement[0]+"input").setAttribute("data-correct","looks like you've had one too many, try again")
+  document.getElementById(answerelement[1]+"input").setAttribute("data-correct","looks like you've had one too many, try again") 
+  document.getElementById(answerelement[2]+"input").setAttribute("data-correct","Great Job, Celebrate with a beer!")
 
 }
 TriviaButton2.addEventListener("click",function(){
