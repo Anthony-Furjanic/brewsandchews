@@ -117,6 +117,7 @@ console.log(myanswer)
 var myanswerelement=document.querySelector("#myanswer")
 myanswerelement.innerHTML= ""
 myanswerelement.textContent= myanswer
+document.querySelector("[name=groupOfAnswers]:checked").checked=false
 })
 
 
