@@ -1,5 +1,11 @@
 const API_KEY = "b7ac001729cf4bbc83648cc843576dc7";
 /*const API_KEY = "0088aafe930d4033a5c614a83a670522";*/
+const API_KEY = "19db81f8aeaa44ca9368c08c0050ab3d";
+const API_KEY = "292fa4f8908f4c5e9f6c335c46c0daa9";
+const API_KEY = "18b31ad0e807468fbe30a17793faa16b";
+
+
+
 
 let userContainerEl = document.getElementById('foodSearch');
 let fetchButtonEl = document.getElementById('searchButton');
