@@ -9,7 +9,7 @@ Brews & Chews is a website designed with both the extrovert and introvert in min
 
 <h1 align="center"> Getting Started</h1>
 
-ENTER SOME TEXT HERE.
+This project, much like the food we hope you'll have fun creating, was made with love! It was a collaborative effort, and took plenty of communication, organization, flexibility and optimism to get the end result. 
 
 
 <h2 align="center"> User Stories</h2>
@@ -83,56 +83,18 @@ ___
 
 ___
 
-<h2 align="center"> </h2>
+<h2 align="center"> Take a quiz! </h2>
 
-
+ENTER GIF HERE
 
 <!-- <p align="center"><img src="./images/cart2.gif"> -->
 </p>
 
 _ _ _
 
-<h2 align="center">
-</h2>
+<h2 align="center"> Make a suggestion</h2>
 
-
-
-<p align="center">
-  <!-- <img src="./images/checkout.gif"> -->
-</p>
-
-_ _ _
-
-<h1 align="center"></h1>
-
-
-
-```
-text here
-```
-```
-text here
-```
-
-
-<h2 align="center"></h2>
-
-
-
-+ 
-- 
-+  
--  
-
-<h4 align="center"></h4>
-
-
-
-<h4 align="center"></h4>
-
-
-
-<h4 align="center"></h4>
+ENTER GIF HERE
 
 
 
@@ -142,46 +104,6 @@ text here
 <h4 align="center"></h4>
 
 
-___
-<h2 align="center"></h2>
-
-
-<p align="center">
-<!-- <img src="./images/ExpressRoutes.png"></p> -->
-
-
-<p align="center">
-<!-- <img src="./images/controllers2.png"></p> -->
-
-___
-<h1 align="center"></h1>
-
-
-
-<p align="center">
-<!-- <img src="./images/authRoutes.png"></p> -->
-
-
-_ _ _
-
-<h1 align="center"></h1>
-
-<h2 align="center"></h2>
-
-
-```
-text
-```
-
-
-
-<h2 align="center"></h2>
-
-
-
- ```
- text here
- ```
 
 
 
@@ -195,10 +117,23 @@ _ _ _
 - [Spoonacular](https://spoonacular.com/food-api)
 + VS Code
 - GIPHY CAPTURE
++ Questions courtesy of [Beer Trivia](https://triviaearth.com/trivia/beer-trivia)
 
-<h1 align="center">Enter Deployed Link</h1>
+---
+
+<h1 align="center">Brews & Chews Deployed Link</h1>
+
+[Deployed Link](https://anthony-furjanic.github.io/brewsandchews/)
 
 
+
+
+<p>Thanks for taking the time to view our site! We hope you enjoy &#128515;</p>
+
+
+
+
+---
 
 <h1 align="center">Creators</h1>
 
@@ -206,5 +141,5 @@ _ _ _
 +  Amy Lipscomb: [Github](https://github.com/AmyLipscomb)
 +  Cassandre Beauzil : [Github](https://github.com/Cassandre0617)
 +  Anthony Furjanic: [Github](https://github.com/Anthony-Furjanic)
-+  Ramsey Banda: [Github]( )
++  Ramsey Banda: [Github](https://github.com/DummyWoke)
 
