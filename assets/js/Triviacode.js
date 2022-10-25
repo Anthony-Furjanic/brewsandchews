@@ -90,42 +90,9 @@ myanswerelement.innerHTML= ""
   console.log(randomQuestion.answers);
 
   document.getElementById("questionField").innerHTML = randomQuestion.questions;
-<<<<<<< HEAD
   document.getElementById("answer1").innerHTML = randomQuestion.answers[0];
   document.getElementById("answer2").innerHTML = randomQuestion.answers[1];
   document.getElementById("answer3").innerHTML = randomQuestion.rightAns[0];
-=======
-  const answerelement= ["answer1","answer2","answer3"];
-  for (var i=0; i< 4;i++)
-  {
-    var num1= Math.floor(Math.random() * answerelement.length);
-    var num2= Math.floor(Math.random() * answerelement.length);
-    if (num1 != num2){
-      var temp= answerelement[num1];
-      answerelement[num1]= answerelement[num2];
-      answerelement[num2]= temp
-    }
-  }
-  document.getElementById(answerelement[0]).innerHTML = randomQuestion.answers[0];
-  document.getElementById(answerelement[1]).innerHTML = randomQuestion.answers[1];
-  document.getElementById(answerelement[2]).innerHTML = randomQuestion.rightans[0];
-
-  document.getElementById(answerelement[0]+"input").setAttribute("data-correct","wrong")
-  document.getElementById(answerelement[1]+"input").setAttribute("data-correct","wrong") 
-  document.getElementById(answerelement[2]+"input").setAttribute("data-correct","correct")
-
-}
-TriviaButton2.addEventListener("click",function(){
-  
-var myanswer=document.querySelector("[name=groupOfAnswers]:checked").getAttribute("data-correct")
-console.log(myanswer)
-var myanswerelement=document.querySelector("#myanswer")
-myanswerelement.innerHTML= ""
-myanswerelement.textContent= myanswer
-document.querySelector("[name=groupOfAnswers]:checked").checked=false
-})
-
->>>>>>> 3ab12a32ceeb2d9dd25075f28603b8d97390aaee
 
   //   trivquestions = trivquestions[Math.floor(Math.random()*
   //     (trivquestions.length))];
